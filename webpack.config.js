@@ -31,7 +31,7 @@ module.exports = {
         }),
         new CopyPlugin({
           patterns: [
-              { from: 'favicon.png', to: 'favicon.png' },
+              { from: './favicon.png', to: './favicon.png' },
           ],
       }),
     ],
