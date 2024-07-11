@@ -16,6 +16,16 @@
   },
   "rules": {
     "quotes": ["warn", "single"],
-    "semi": ["warn", "always"]
-  }
+    "semi": ["warn", "always"],
+    "prefer-const": "error",
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+  },
+  "overrides": [
+    {
+      "files": ["webpack.config.js"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
 }

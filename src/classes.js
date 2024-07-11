@@ -1,10 +1,6 @@
-'use strict'
-
 class Pan {
-  constructor (name, color, price) {
-    this.name = name,
-    this.color = color,
-    this.price = price;
+  constructor(name, color, price) {
+    (this.name = name), (this.color = color), (this.price = price);
   }
 
   showPrice() {

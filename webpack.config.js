@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
+    entry: './index.js',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
@@ -15,6 +15,13 @@ module.exports = {
         },
         compress: true,
         port: 9000,
+        client: {
+          logging: 'none', // Change this to 'warn' or 'error' to show only warnings or errors
+          overlay: {
+              warnings: true,
+              errors: true,
+          },
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
