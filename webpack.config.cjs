@@ -1,10 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './index.js',
+    entry: './index.js', // Replace with your actual main application entry file
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
@@ -16,12 +15,13 @@ module.exports = {
         },
         compress: true,
         port: 9000,
+        hot: true, // Enable HMR
         client: {
-          logging: 'none', // Change this to 'warn' or 'error' to show only warnings or errors
-          overlay: {
-              warnings: true,
-              errors: true,
-          },
+            logging: 'none', // Change this to 'warn' or 'error' to show only warnings or errors
+            overlay: {
+                warnings: true,
+                errors: true,
+            },
         },
     },
     plugins: [
@@ -29,11 +29,6 @@ module.exports = {
             template: './index.html',
             favicon: './favicon.png'
         }),
-        new CopyPlugin({
-          patterns: [
-              { from: './favicon.png', to: './favicon.png' },
-          ],
-      }),
     ],
     module: {
         rules: [

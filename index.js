@@ -1,4 +1,4 @@
-import './src/classes.js';
+import './src/officeChair.js';
 
 window.addEventListener('error', (event) => {
   console.error('An error occurred:', event.error);
