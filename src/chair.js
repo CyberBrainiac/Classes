@@ -1,4 +1,4 @@
-class Chair {
+export class Chair {
   constructor(
     color,
     seatHeight,
@@ -42,5 +42,5 @@ const newChair = new Chair(
   false,
 );
 
-console.dir(Chair);
-console.log('Chair Object', newChair);
+// console.dir(Chair);
+// console.log('Chair Object', newChair);

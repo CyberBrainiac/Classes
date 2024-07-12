@@ -18,7 +18,8 @@
     "quotes": ["warn", "single"],
     "semi": ["warn", "always"],
     "prefer-const": "error",
-    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+    "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
+    "import/no-unresolved": "none"
   },
   "overrides": [
     {
