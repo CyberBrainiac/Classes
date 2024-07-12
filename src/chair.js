@@ -11,6 +11,7 @@ export class Chair {
     isHeightAdjustable = false,
     isMovable = false,
   ) {
+    this.type = 'Chair';
     this.color = color;
     this.seatHeight = seatHeight;
     this.recliningAngle = recliningAngle;
@@ -21,7 +22,6 @@ export class Chair {
     this.seatSize = seatSize;
     this.isHeightAdjustable = isHeightAdjustable;
     this.isMovable = isMovable;
-    this.type = 'Chair';
   }
 
   adjustableHeight() {}

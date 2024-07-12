@@ -19,7 +19,7 @@
     "semi": ["warn", "always"],
     "prefer-const": "error",
     "no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
-    "import/no-unresolved": "none"
+    "import/no-unresolved": 0
   },
   "overrides": [
     {
