@@ -1,4 +1,5 @@
 import './src/officeChair.js';
+import './src/superForObject.js';
 
 window.addEventListener('error', (event) => {
   console.error('An error occurred:', event.error);

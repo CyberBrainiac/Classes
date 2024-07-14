@@ -23,7 +23,7 @@ class OfficeChair extends Chair {
     if (angle >= this.recliningAngle) {
       return `Chair angle changed to ${angle}`;
     } else {
-      return`Angle cannot be decreased more than the min reclining angle ${this.recliningAngle}`;
+      return `Angle cannot be decreased more than the min reclining angle ${this.recliningAngle}`;
     }
   }
 
