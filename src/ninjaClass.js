@@ -49,4 +49,4 @@ class Ninja extends class {
   }
 }
 
-console.log(new Ninja({ someField: 'i dont know, what' }));
+// console.log(new Ninja({ someField: 'i dont know, what' }));

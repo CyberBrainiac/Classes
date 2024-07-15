@@ -17,8 +17,12 @@ class C {
     return obj.#x;
   }
 
-  static getY() {
+  static #getY() {
     return this.#y;
+  }
+
+  static getY() {
+    return this.#getY();
   }
 
   getPublicNumber() {
@@ -50,3 +54,5 @@ const z = new Z();
 
 // console.dir(C);
 // console.log(z);
+
+console.log(z.getPublicNumber());
