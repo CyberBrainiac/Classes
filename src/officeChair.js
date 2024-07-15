@@ -33,8 +33,8 @@ class OfficeChair extends Chair {
   }
 }
 
-const newOfficeChair = new OfficeChair('Red', true, 30, 30);
+// const newOfficeChair = new OfficeChair('Red', true, 30, 30);
 
-console.log(newOfficeChair.adjustableHeight(31));
-console.log(newOfficeChair.adjustAngle(40));
-console.log(newOfficeChair.moveChair(10, 20));
+// console.log(newOfficeChair.adjustableHeight(31));
+// console.log(newOfficeChair.adjustAngle(40));
+// console.log(newOfficeChair.moveChair(10, 20));
